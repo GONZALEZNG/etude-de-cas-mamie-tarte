@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mamie Tarte – Étude de cas : reprendre un commerce</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;700&display=swap">
+<style>
+:root{--bg:#eceeec;--card:#fff;--ink:#1c2826;--mut:#5d6a67;--ac:#1f5b4a;--br:#a87a2a;--line:#d3d9d6;--ok:#1d7a48;--ko:#b0302b;--sl:#26332f;--ch:#f2efe6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#141a19;--card:#1e2625;--ink:#e8ece9;--mut:#9aa8a4;--ac:#5fb596;--br:#d3a652;--line:#334240;--ok:#62c48d;--ko:#ef7c76;--sl:#0e1413;--ch:#f2efe6}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#141a19;--card:#1e2625;--ink:#e8ece9;--mut:#9aa8a4;--ac:#5fb596;--br:#d3a652;--line:#334240;--ok:#62c48d;--ko:#ef7c76;--sl:#0e1413;--ch:#f2efe6}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Bitter,Georgia,serif;line-height:1.2;margin:0 0 .5em}
+.w{max-width:860px;margin:0 auto;padding:14px}
+.ardoise{background:var(--sl);color:var(--ch);border:6px solid #7a5a2b;border-radius:6px;padding:18px 20px;margin-bottom:12px}
+.ardoise h1{font-size:1.9rem;margin:0}.ardoise p{margin:.3em 0 0;opacity:.85}
+.ardoise input{margin-top:10px;background:transparent;border:0;border-bottom:1px dashed #f2efe6aa;color:var(--ch);padding:4px 0;width:100%;font:inherit}
+.ardoise input::placeholder{color:#f2efe699}
+nav{display:flex;gap:6px;overflow-x:auto;padding-bottom:6px;margin-bottom:10px}
+nav button{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:20px;font:inherit;font-size:.92rem;cursor:pointer}
+nav button[aria-current="true"]{background:var(--ac);color:#fff;border-color:var(--ac)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--br);outline-offset:2px}
+.p{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px;margin-bottom:12px}
+.m{color:var(--mut)}.sc{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:right}
+td:first-child,th:first-child{text-align:left}
+tr.b td{font-weight:700;background:color-mix(in srgb,var(--ac) 9%,transparent)}
+label{display:block;font-weight:600;margin:14px 0 4px}
+textarea,select,input[type=number]{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px}
+textarea{min-height:70px;resize:vertical}
+details{margin:2px 0 6px;color:var(--mut);font-size:.9rem}summary{cursor:pointer}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:6px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;margin-top:10px}
+.btn.s{background:transparent;color:var(--ac);border:1px solid var(--ac)}
+.ok{color:var(--ok)}.ko{color:var(--ko)}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.cd{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--card);min-height:120px;text-align:left;font:inherit;color:var(--ink)}
+button.cd{cursor:pointer;background:var(--sl);color:var(--ch);border:2px solid #7a5a2b;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;font-weight:600}
+button.cd[aria-pressed="true"]{outline:3px solid var(--br)}
+button.cd:disabled{opacity:.4;cursor:not-allowed}
+.cd.rev{border-left:5px solid var(--br)}
+.rad label{display:flex;gap:8px;align-items:center;font-weight:500;margin:6px 0}.rad input{width:auto}
+.fl td{vertical-align:top}.fl select{width:auto}
+@media (max-width:520px){.ardoise h1{font-size:1.5rem}}
+.sw{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}.q{border:1px solid var(--line);border-left:5px solid var(--ac);border-radius:8px;padding:6px 14px;background:var(--bg)}.q.w{border-left-color:var(--ko)}.q.o{border-left-color:var(--br)}.q.t{border-left-color:var(--mut)}.q h3{margin-top:6px}.q ul{padding-left:18px;margin:0 0 8px}.fl input[type=number]{width:90px}
+.rs{display:block;margin-top:10px;background:transparent;color:var(--ch);border:1px solid #f2efe688;border-radius:6px;padding:4px 10px;font:inherit;font-size:.85rem;cursor:pointer}
+</style></head><body><div class="w">
+<header class="ardoise"><h1>Mamie Tarte</h1><p>Étude de cas : reprendre un commerce ou y renoncer ?</p>
+<input id="nm" data-k="names" placeholder="Prénoms du binôme" aria-label="Prénoms du binôme"><button class="rs" data-a="reset" type="button">Tout effacer</button></header>
+<nav id="nav" aria-label="Sections"></nav><main id="main"></main></div>
+<script>
+const T=[["sc","Scénario"],["doc","Documents"],["sw","SWOT"],["gd","Guide d’analyse"],["ca","Cartes infos"],["de","Décision"],["fo","Espace formatrice"]];
+const R=[["Chiffre d’affaires",600,640,1],["Achats consommés",190,215],["Marge brute",410,425,1],["Autres charges externes",110,130],["Valeur ajoutée",300,295,1],["Impôts et taxes",15,15],["Charges de personnel",200,220],["EBE",85,60,1],["Dotations aux amortissements",30,35],["Résultat d’exploitation",55,25,1],["Charges financières",5,10],["Impôt sur les sociétés",10,3],["Résultat net",40,12,1]];
+const A=[["Immobilisations (fournil, agencement, terrasse)",150,185],["Stocks",12,15],["Créances clients",8,10],["Trésorerie",40,20],["Total actif",210,230,1]];
+const P=[["Capitaux propres",90,102],["Emprunts",60,85],["Dettes fournisseurs et sociales",60,43],["Total passif",210,230,1]];
+const SO=[0,2,4,7,9,12];
+const NUM={a1:[14.2,.6],a2:[9.4,.6],b1:[66.7,.6],b2:[74.6,.6],c1:[33.3,.6],c2:[34.4,.6],f1:[70,1],f2:[47,1],r1:[-40,1],r2:[-18,1],jb1:[-24,1],jb2:[-10,1],jt1:[24,1],jt2:[11,1],s:[18,2]};
+const C=[["Personnel","🧑‍🍳","Deux employés de salle de thé ont été embauchés en CDI pour la terrasse (environ 20 K€ de charges sur l’année). Ils sont jeunes et doivent être formés. La terrasse n’est ouverte que depuis 5 mois."],
+["Loyer et charges","🏠","Le bail commercial a été renouvelé : le loyer a augmenté de 12 K€ par an. L’énergie a coûté 8 K€ de plus (fours et vitrines réfrigérées neufs)."],
+["Travaux","🔨","Les travaux (fournil et terrasse, 70 K€) sont terminés. Ils ont été financés par un nouvel emprunt de 40 K€ et par la trésorerie. Aucun gros investissement n’est prévu avant 5 ans."],
+["Clients","👥","Depuis son ouverture, la terrasse a généré 45 K€ de CA. Les trois premiers mois de l’année suivante sont en hausse de 12 % par rapport à la même période."],
+["Fournisseurs","📦","Farine, beurre et chocolat ont augmenté d’environ 8 % cette année. La gérante n’a pas modifié ses prix de vente depuis 2 ans. Elle a aussi réduit ses délais de paiement fournisseurs (de 30 à 20 jours environ)."],
+["Marché","📍","Une boulangerie concurrente ouvre à 200 m dans 6 mois. Un chantier de tramway sera visible devant la boutique pendant environ un an."]];
+const SW=[["f","Forces",["Local bien situé en centre-ville, avec un bon flux piéton","Travaux récents : pas de gros investissement à prévoir avant 5 ans","Terrasse ouverte : nouvelle source de chiffre d’affaires","Équipe jeune et motivée"]],
+["w","Faiblesses",["Équipe jeune à former, peu d’expérience","Prix de vente inchangés depuis 2 ans","Endettement en hausse, trésorerie en baisse","Savoir-faire et clientèle très liés à la gérante actuelle"]],
+["o","Opportunités",["Chiffre d’affaires en hausse de 12 % au premier trimestre suivant","Marge de manœuvre sur les prix de vente","Vente à emporter, traiteur, commande en ligne à développer"]],
+["t","Menaces",["Concurrent à 200 m dans 6 mois","Chantier du tramway devant la boutique pendant environ 1 an","Hausse des matières premières (+8 %) et de l’énergie"]]];
+const LK=[["Local bien situé","Loyer renouvelé : charges externes +18 %"],["Travaux récents","Immobilisations +35, emprunts +25, dotations +5, trésorerie −20"],["Équipe jeune à former","Charges de personnel +10 % pour +7 % de CA"],["Prix inchangés depuis 2 ans","Taux de marge brute : 68,3 % → 66,4 %"]];
+const D={reprendre:"Je reprends",negocier:"Je négocie",renoncer:"Je renonce"};
+let S={},tab="sc",ok=false;
+try{S=JSON.parse(localStorage.getItem("pz3")||"{}")}catch(x){}
+S.cards=S.cards||[];
+const save=()=>{try{localStorage.setItem("pz3",JSON.stringify(S))}catch(x){}};
+const e=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const g=k=>k.split(".").reduce((o,x)=>o&&o[x],S)||"";
+const st=(k,v)=>{const p=k.split("."),l=p.pop();let o=S;for(const x of p)o=o[x]=o[x]||{};o[l]=v;save()};
+const pc=(a,b)=>{if(!a)return"";const p=(b-a)/a*100;return(p>0?"+":"")+p.toFixed(1).replace(".",",")+" %"};
+const tb=(rows,h)=>`<div class="sc"><table><tr><th>${h}</th><th>N-1</th><th>N</th><th>Évol.</th></tr>${rows.map(r=>`<tr${r[3]||/^Total/.test(r[0])?' class="b"':""}><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td><td>${pc(r[1],r[2])}</td></tr>`).join("")}</table></div>`;
+const ta=(k,l,h)=>`<label for="${k}">${l}</label>${h?`<details><summary>Besoin d’un indice ?</summary>${h}</details>`:""}<textarea id="${k}" data-k="${k}">${e(g(k))}</textarea>`;
+const sel=(k,opts)=>`<select data-k="${k}"><option value="">Choisir…</option>${opts.map(o=>`<option value="${o[0]}"${g(k)==o[0]?" selected":""}>${o[1]}</option>`).join("")}</select>`;
+const ni=k=>`<input type="number" step="any" data-k="n.${k}" value="${e(g("n."+k))}" aria-label="${k}">`;
+const nt=rows=>`<div class="sc"><table class="fl"><tr><th>À calculer</th><th>N-1</th><th></th><th>N</th><th></th></tr>${rows.map(r=>`<tr><td>${r[0]}</td><td>${ni(r[1]+"1")}</td><td data-f="n${r[1]}1">${feed("n"+r[1]+"1")}</td><td>${ni(r[1]+"2")}</td><td data-f="n${r[1]}2">${feed("n"+r[1]+"2")}</td></tr>`).join("")}</table></div>`;
+const LC=[["caf","Dans le résultat net et la CAF"],["imm","Dans les immobilisations et les emprunts"],["four","Dans les dettes fournisseurs"]];
+const QM={z1:["moins","✓ La CAF mesure l’argent que l’activité dégage chaque année : moins de CAF, moins de moyens.","✗ La CAF mesure l’argent dégagé par l’activité. Elle baisse : qu’est-ce que cela change ?"],z2:["fin","✓ C’est fréquent en boulangerie : on encaisse tout de suite et on paie plus tard.","✗ Un BFR négatif n’est pas un déficit. Qui avance l’argent : l’entreprise ou ses fournisseurs ?"],z3:["four","✓ Les dettes fournisseurs baissent de 17 : elles sont payées plus vite, ce qui consomme de la trésorerie.","✗ Comparez l’évolution de chaque ligne entre N-1 et N : laquelle varie le plus ?"],z4:["caf","✓","✗ Cherchez la ligne concernée."],z5:["imm","✓","✗ Cherchez la ligne concernée."],z6:["four","✓","✗ Cherchez la ligne concernée."],z7:["res","✓ Le résultat net (12 K€) est conservé dans l’entreprise : 90 + 12 = 102.","✗ Regardez le résultat net de l’année et ce qu’il est devenu (aucun dividende)."]};
+const qz=(k,l,o)=>`<label>${l}</label>${sel(k,o)}<p data-f="${k}">${feed(k)}</p>`;
+function feed(id){
+if(id=="w"){const v=g("w");return !v?"":v=="va"?`<b class="ok">✓ La marge brute progresse encore. La valeur ajoutée est la première à reculer.</b>`:`<b class="ko">✗ Parcourez la cascade dans l’ordre : quel est le premier solde qui baisse ?</b>`}
+if(id=="v"){const v=g("v");return !v?"":v=="sal"?`<b class="ok">✓ Les charges de personnel absorbent 74,6 % de la VA (66,7 % l’an passé) : la richesse créée est ponctionnée par les salaires.</b>`:`<b class="ko">✗ Comparez chaque charge à la VA de 295 K€.</b>`}
+if(QM[id]){const v=g(id);return !v?"":v==QM[id][0]?`<b class="ok">${QM[id][1]}</b>`:`<b class="ko">${QM[id][2]}</b>`}
+if(id[0]=="n"){const k=id.slice(1),v=g("n."+k);if(v==="")return"";return Math.abs(+v-NUM[k][0])<=NUM[k][1]?`<b class="ok">✓</b>`:`<b class="ko">✗ À refaire</b>`}
+const v=g("l."+id);if(!v)return"";const r=R[SO[+id.slice(1)]];return((r[2]>r[1])==(v=="up"))?`<b class="ok">✓ ${r[1]} → ${r[2]}</b>`:`<b class="ko">✗ Relisez : ${r[1]} → ${r[2]}</b>`}
+const V={
+sc:()=>`<div class="p"><h2>La situation</h2><p>La gérante de <b>Mamie Tarte</b>, boulangerie-pâtisserie avec salon de thé et terrasse en centre-ville (12 salariés), part à la retraite. Elle demande <b>250 K€</b> pour céder son fonds de commerce.</p><p>Vous formez un binôme de repreneurs. Vous disposez des comptes de deux exercices, d’une analyse SWOT de départ et de repères du secteur. Vous devez <b>reprendre, négocier ou renoncer</b>, et justifier votre choix avec des chiffres.</p></div>
+<div class="p"><h3>Déroulé (1h)</h3><div class="sc"><table><tr><td>5 min</td><td>Découvrir les documents et le SWOT</td></tr><tr><td>15 min</td><td>Étape 1 : lire, mesurer, identifier qui capte la richesse créée</td></tr><tr><td>10 min</td><td>Étape 2 : CAF, BFR, trésorerie</td></tr><tr><td>10 min</td><td>Étapes 3 et 4 : SWOT chiffré, test du tramway, diagnostic</td></tr><tr><td>20 min</td><td>Décision</td></tr></table></div>
+<p class="m">Vous pouvez tirer jusqu’à <b>3 cartes infos</b>, à tout moment. Pour chaque carte, vous devez dire pourquoi vous la demandez.</p></div>
+<button class="btn" data-go="doc">Voir les documents</button>`,
+doc:()=>`<div class="p"><h2>Compte de résultat</h2><p class="m">En milliers d’euros (K€). La colonne Évol. donne la variation en % entre N-1 et N.</p>${tb(R,"Poste")}</div><div class="p"><h2>Bilan simplifié</h2>${tb(A,"Actif")}<br>${tb(P,"Passif")}</div>
+<div class="p"><h3>Informations complémentaires (K€)</h3><ul><li>Investissements de l’année N : 70 (fournil et terrasse)</li><li>Nouvel emprunt en N : 40</li><li>Remboursements de capital : 10 en N-1, 15 en N</li><li>Aucun dividende versé</li><li>Formules : CAF = résultat net + dotations aux amortissements ; BFR = stocks + créances − dettes fournisseurs et sociales ; jours de CA = valeur ÷ CA × 360</li></ul></div>
+<div class="p"><h3>Repères du secteur</h3><ul><li>EBE ÷ CA : 12 à 15 %</li><li>Charges de personnel ÷ VA : 65 à 70 % (au-delà de 70 %, signal d’alerte)</li><li>Charges de personnel ÷ CA : 30 à 35 %</li><li>La CAF doit couvrir largement les remboursements d’emprunt</li></ul><p class="m">Repères pédagogiques indicatifs, fournis pour ce cas.</p></div>`,
+sw:()=>`<div class="p"><h2>Analyse SWOT de départ</h2><div class="sw">${SW.map(s=>`<div class="q ${s[0]}"><h3>${s[1]}</h3><ul>${s[2].map(x=>`<li>${x}</li>`).join("")}</ul></div>`).join("")}</div></div>
+<div class="p"><h2>Du SWOT aux chiffres</h2><p>Un élément du SWOT se vérifie toujours dans les comptes. Voici quatre exemples. Vous en compléterez d’autres à l’étape 3 du guide.</p><div class="sc"><table><tr><th>Élément du SWOT</th><th>Ce que disent les chiffres</th></tr>${LK.map(l=>`<tr><td style="text-align:left">${l[0]}</td><td style="text-align:left">${l[1]}</td></tr>`).join("")}</table></div></div>`,
+gd:()=>`<div class="p"><h2>Étape 1 : lire et mesurer</h2><p>1a. Pour chaque solde, indiquez s’il augmente ou baisse.</p><div class="sc"><table class="fl">${SO.map((r,i)=>`<tr><td>${R[r][0]}</td><td>${sel("l.l"+i,[["up","Il augmente"],["down","Il baisse"]])}</td><td data-f="l${i}">${feed("l"+i)}</td></tr>`).join("")}</table></div>
+<label>À quel solde la baisse commence-t-elle ?</label>${sel("w",[["marge","Marge brute"],["va","Valeur ajoutée"],["ebe","EBE"],["re","Résultat d’exploitation"]])}<p data-f="w">${feed("w")}</p>
+${ta("q.a","1b. La marge brute progresse de 15 K€, mais l’EBE baisse de 25 K€. Où partent les 40 K€ ? Comparez les hausses de chaque charge (en K€ et en %) à celle du CA.","Calculez l’écart de chaque charge, puis lisez la colonne Évol. : quelles charges augmentent plus vite que le CA ?")}
+<p>1c. Calculez ces ratios (en %, arrondis à une décimale).</p>${nt([["EBE ÷ CA","a"],["Charges de personnel ÷ VA","b"],["Charges de personnel ÷ CA","c"]])}
+${ta("q.b","Comparez aux repères du secteur. La masse salariale pèse peu sur le CA, mais beaucoup sur la VA. Pourquoi ces deux ratios ne racontent-ils pas la même histoire ?","Le CA contient encore les achats et les charges externes. La VA est la richesse réellement créée par l’entreprise.")}
+<label>Qui capte l’essentiel de la richesse créée (VA) ?</label>${sel("v",[["ach","Les achats"],["ext","Les charges externes"],["sal","Les salaires"],["imp","Les impôts"],["amo","Les amortissements"]])}<p data-f="v">${feed("v")}</p></div>
+<div class="p"><h2>Étape 2 : comprendre ce qui arrive à la trésorerie</h2><p>On cherche un seul enchaînement : <b>l’entreprise dégage moins d’argent, a payé des travaux et règle ses fournisseurs plus vite, donc sa trésorerie baisse.</b></p>
+<h3>2a. Deux calculs, en K€</h3><p>CAF = résultat net + dotations aux amortissements<br>BFR = stocks + créances clients − dettes fournisseurs et sociales<br><b>Attendu :</b> un nombre par année (N-1, puis N).</p>${nt([["CAF","f"],["BFR","r"]])}
+<p class="m">À retenir pour la suite : la trésorerie représente 24 jours de CA en N-1 et 11 jours en N.</p>
+<h3>2b. Comprendre</h3>
+${qz("z1","La CAF a nettement baissé. Que signifie cette baisse pour l’entreprise ?",[["moins","Elle dégage moins d’argent pour rembourser ses dettes et financer ses projets"],["plus","Elle a plus de marge de manœuvre pour investir"],["ca","Son chiffre d’affaires a baissé"]])}
+${qz("z2","Le BFR est négatif. Que cela signifie-t-il ?",[["fin","Les clients paient vite et les fournisseurs sont payés plus tard : ils financent l’activité"],["av","L’entreprise doit avancer beaucoup d’argent avant d’encaisser"],["def","L’entreprise est en déficit"]])}
+${qz("z3","Le BFR négatif a fortement diminué. Quelle ligne du bilan explique l’essentiel de l’écart ?",[["sto","Les stocks"],["cre","Les créances clients"],["four","Les dettes fournisseurs"]])}
+<label>Trésorerie en baisse : où voit-on chaque cause ?</label><div class="sc"><table class="fl">${[["L’activité dégage moins d’argent","z4"],["Les travaux ont été payés avec de la dette et de la trésorerie","z5"],["Les fournisseurs sont payés plus vite","z6"]].map(r=>`<tr><td>${r[0]}</td><td>${sel(r[1],LC)}</td><td data-f="${r[1]}">${feed(r[1])}</td></tr>`).join("")}</table></div>
+${qz("z7","Les capitaux propres passent de 90 à 102 K€. Pourquoi ?",[["res","Le résultat de l’année a été conservé dans l’entreprise"],["emp","Un nouvel emprunt a été contracté"],["cap","Les associés ont apporté du capital"]])}</div>
+<div class="p"><h2>Étape 3 : les bonnes questions à se poser</h2><p>Pas de calcul ici. Répondez en une ou deux phrases : chaque réponse prépare votre décision finale.</p>${[["t.a","Travaux récents : quel avantage pour un repreneur ? Quelle contrepartie voit-on dans les comptes ?","Pas de gros investissement à prévoir, mais des amortissements et des emprunts à rembourser."],["t.b","Terrasse et deux embauches : que peut-on attendre sur le chiffre d’affaires, et à quel horizon ?","La terrasse n’est ouverte que depuis 5 mois. Les salaires pèsent déjà, le CA pas encore sur une année pleine."],["t.c","Prix de vente inchangés depuis 2 ans alors que les matières augmentent : que peut faire un repreneur ?","Quel solde améliorerait une hausse de prix ?"],["t.d","Si le CA baisse pendant le chantier du tramway, quelles charges baissent aussi et lesquelles restent ? Que devient l’EBE ?","Les achats suivent les ventes. Les salaires, le loyer et les remboursements restent."],["t.e","Avec 11 jours de CA en trésorerie, que se passe-t-il si le CA baisse ? Que demanderiez-vous à la gérante avant d’acheter ?","Pensez au concurrent dans 6 mois et à ce qu’une négociation peut obtenir."]].map(q=>ta(q[0],q[1],q[2])).join("")}</div>
+<div class="p"><h2>Étape 4 : diagnostiquer</h2>${ta("d.s","En une phrase : pourquoi le résultat net est-il divisé par 3 alors que le CA augmente ?")}${ta("d.f","Deux points forts")}${ta("d.v","Deux points de vigilance")}
+<label>La dégradation vous semble…</label><div class="rad">${[["ponctuelle","Ponctuelle (travaux, embauches)"],["structurelle","Structurelle (le modèle est fragile)"],["mixte","Un mélange des deux"]].map(o=>`<label><input type="radio" name="nat" data-k="d.nat" value="${o[0]}"${g("d.nat")==o[0]?" checked":""}>${o[1]}</label>`).join("")}</div></div>`,
+ca:()=>{const n=S.cards.length,used=S.cards.map(c=>c.i);return `<div class="p"><h2>Cartes infos</h2><p>Il vous reste <b>${3-n}</b> carte${3-n>1?"s":""}. Choisissez un thème, expliquez pourquoi, puis retournez la carte.</p>
+<div class="g">${C.map((c,i)=>used.includes(i)?`<div class="cd rev"><b>${c[1]} ${c[0]}</b><p>${c[2]}</p><p class="m"><i>Votre raison : ${e(S.cards.find(x=>x.i==i).why)}</i></p></div>`:`<button class="cd" data-a="pick" data-i="${i}" aria-pressed="${S.pick===i}"${n>=3?" disabled":""}><span style="font-size:1.8rem">${c[1]}</span>${c[0]}</button>`).join("")}</div></div>
+${S.pick!=null&&n<3?`<div class="p"><h3>Carte « ${C[S.pick][0]} »</h3>${ta("why","Pourquoi demandez-vous cette carte ? Quel chiffre voulez-vous éclairer ?")}<button class="btn" data-a="flip">Retourner la carte</button><p class="ko" id="er"></p></div>`:""}`},
+de:()=>`<div class="p"><h2>Décider</h2><p>Le prix demandé (250 K€) représente environ 4,2 ans d’EBE et 5,3 ans de CAF de l’année N.</p>
+<label>Votre décision</label><div class="rad">${Object.entries(D).map(o=>`<label><input type="radio" name="dec" data-k="x.dec" value="${o[0]}"${g("x.dec")==o[0]?" checked":""}>${o[1]}</label>`).join("")}</div>
+<label for="x.p">Prix maximum que vous seriez prêts à payer (K€)</label><input type="number" id="x.p" data-k="x.p" value="${e(g("x.p"))}" min="0">
+${ta("x.a1","Argument 1 (appuyé sur un chiffre)")}${ta("x.a2","Argument 2")}${ta("x.a3","Argument 3")}${ta("x.r","Votre principale condition ou le risque que vous acceptez")}
+<button class="btn" data-a="fiche">Générer ma fiche</button></div><div class="p" id="fiche" hidden><h3>Ma fiche décision</h3><textarea id="ft" readonly style="min-height:300px"></textarea><button class="btn s" data-a="copy">Copier la fiche</button> <span id="cp" class="ok"></span></div>`,
+fo:()=>ok?`<div class="p"><h2>Corrigé</h2><ul><li><b>Évolutions :</b> CA +6,7 % ; achats +13,2 % ; marge brute +3,7 % ; charges externes +18,2 % ; VA −1,7 % ; personnel +10 % ; EBE −29,4 % ; résultat net −70 %. Les charges progressent plus vite que le CA : +65 K€ de charges pour +40 K€ de CA.</li><li><b>Ratios :</b> EBE ÷ CA 14,2 % → 9,4 % (repère 12-15 %) ; personnel ÷ VA 66,7 % → 74,6 % (alerte au-delà de 70 %) ; personnel ÷ CA 33,3 % → 34,4 % (dans le repère).</li><li><b>Message clé :</b> sur le CA, la masse salariale paraît normale, mais achats et charges externes ont grignoté la marge. Il reste une richesse créée (VA 295) dont les salaires absorbent près de 75 % : l’EBE baisse parce que la richesse créée est ponctionnée par les salaires.</li><li><b>CAF :</b> 70 → 47 (−33 %). L’activité dégage un tiers d’argent en moins pour rembourser ses dettes et financer ses projets.</li><li><b>BFR :</b> −40 → −18. Il reste négatif (clients et fournisseurs financent l’activité), mais l’avantage fond, surtout parce que les dettes fournisseurs baissent de 17 : elles sont payées plus vite. La trésorerie passe de 24 à 11 jours de CA.</li><li><b>Chaîne de causes de la baisse de trésorerie :</b> moins de CAF, travaux payés avec de la dette et de la trésorerie, fournisseurs payés plus vite.</li><li><b>Capitaux propres :</b> +12 = résultat net N conservé en réserves (aucun dividende).</li><li><b>Étape 3, pistes :</b> travaux = pas de gros frais à prévoir, mais amortissements et dette ; terrasse = CA à confirmer sur une année pleine alors que les salaires pèsent déjà ; une hausse de prix peut restaurer la marge ; si le CA baisse, les achats suivent mais salaires, loyer et dette restent, donc l’EBE s’effondre (ordre de grandeur : −10 % de CA ≈ −42 K€ de marge, EBE vers 18 K€) ; avec 11 jours de trésorerie, un an de chantier et un concurrent, il faut négocier le prix et les garanties.</li><li><b>Décisions défendables :</b> négocier (prix à la baisse, garantie, accompagnement de la gérante, délais fournisseurs) ; reprendre (local, terrasse, +12 %) ; renoncer (trésorerie trop faible face aux menaces).</li></ul></div>
+<div class="p"><h2>Grille d’observation de la décision</h2><ul><li>Sur quoi s’appuient-ils : CA et résultat net seuls, ou soldes, ratios, CAF et bilan ?</li><li>Identifient-ils que les salaires captent la richesse créée, et pas seulement « les charges » ?</li><li>Font-ils le lien entre trésorerie, CAF, BFR et menaces du SWOT ?</li><li>Biais : séduits par la croissance du CA ? ancrés sur N-1 ?</li><li>Rapport au risque : prudent ou audacieux ? Quelle condition posée ?</li><li>Cartes : lesquelles demandent-ils, et pourquoi ?</li><li>Cohérence entre arguments et décision ; fonctionnement du binôme.</li></ul></div>
+<div class="p"><h3>Débrief</h3><p>Faites voter les binômes (reprendre / négocier / renoncer), puis demandez à un binôme de chaque camp de justifier son choix avec un ratio.</p></div>`:`<div class="p"><h2>Accès formatrice</h2><label for="cd">Code d’accès</label><input id="cd" type="password" style="width:100%;font:inherit;padding:8px"><button class="btn" data-a="unlock">Ouvrir</button><p class="ko" id="er"></p></div>`};
+function draw(){document.getElementById("nav").innerHTML=T.map(t=>`<button data-go="${t[0]}" aria-current="${t[0]==tab}">${t[1]}</button>`).join("");document.getElementById("main").innerHTML=V[tab]();document.getElementById("nm").value=S.names||""}
+function fiche(){const q=k=>g(k)||"—";return `Binôme : ${q("names")}\nDécision : ${D[g("x.dec")]||"—"}\nPrix maximum : ${q("x.p")} K€\n\nArguments\n1. ${q("x.a1")}\n2. ${q("x.a2")}\n3. ${q("x.a3")}\n\nCondition ou risque : ${q("x.r")}\n\nQui capte la richesse créée : ${q("v")}\nPourquoi le résultat net chute : ${q("d.s")}\nDiagnostic : ${q("d.nat")}\nPoints forts : ${q("d.f")}\nPoints de vigilance : ${q("d.v")}\n\nCartes utilisées :\n${S.cards.length?S.cards.map(c=>`- ${C[c.i][0]} (raison : ${c.why})`).join("\n"):"aucune"}`}
+document.addEventListener("input",ev=>{const k=ev.target.dataset.k;if(k)st(k,ev.target.value)});
+document.addEventListener("change",ev=>{const t=ev.target,k=t.dataset.k;if(k&&(t.tagName=="SELECT"||t.type=="radio"||t.type=="number")){st(k,t.value);document.querySelectorAll("[data-f]").forEach(s=>s.innerHTML=feed(s.dataset.f))}});
+document.addEventListener("click",ev=>{const b=ev.target.closest("button");if(!b)return;
+if(b.dataset.go){tab=b.dataset.go;draw();window.scrollTo(0,0);return}
+const a=b.dataset.a;
+if(a=="reset"){if(b.dataset.c){delete b.dataset.c;b.textContent="Tout effacer";S={cards:[]};save();tab="sc";draw()}else{b.dataset.c=1;b.textContent="Confirmer l’effacement"}}
+else if(a=="pick"){S.pick=+b.dataset.i;save();draw()}
+else if(a=="flip"){const w=(S.why||"").trim();if(w.length<10){document.getElementById("er").textContent="Expliquez votre choix en une phrase avant de retourner la carte.";return}S.cards.push({i:S.pick,why:w});S.pick=null;S.why="";save();draw()}
+else if(a=="fiche"){const f=document.getElementById("fiche");f.hidden=false;document.getElementById("ft").value=fiche();f.scrollIntoView({behavior:"smooth"})}
+else if(a=="copy"){const t=document.getElementById("ft");t.select();let r=false;try{r=document.execCommand("copy")}catch(x){}document.getElementById("cp").textContent=r?"Fiche copiée.":"Sélectionnez le texte et copiez-le."}
+else if(a=="unlock"){if(document.getElementById("cd").value=="MT-4719"){ok=true;draw()}else document.getElementById("er").textContent="Code incorrect."}});
+draw();
+</script></body></html>
